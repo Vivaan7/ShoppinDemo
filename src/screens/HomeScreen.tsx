@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image,  TouchableOpacity } from 'react-native';
+import { View,  Image,   } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import { images } from '../../Assets/Images';
 import { scale, moderateScale, verticalScale, ScaledSheet } from 'react-native-size-matters';
@@ -12,11 +12,6 @@ const HomeScreen: React.FC = ({ navigation }: any) => {
         onTextSearch={() => navigation.navigate('TextSearch')}
         onImageSearch={() => navigation.navigate('ImageSearch')}
       />
-      <View style={styles.footer}>
-        <TouchableOpacity>
-          <Text style={styles.footerText}>Sign In</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 };
